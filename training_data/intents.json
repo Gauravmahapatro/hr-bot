@@ -1,0 +1,198 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Hello, I am Gaurav", "Hello,I am XYZ", "Hi, I am Yash", "Hi, I am Anjali"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can help you with queries related to holiday,leave policy,refferal bonus,attendance and exitprocess.", "Offering support for queries related to holiday,leave policy,refferal bonus,attendance and exitprocess."],
+         "context": [""]
+        },
+        {"tag": "holiday_client",
+         "patterns": ["Which holiday calendar is applicable for associates working at client site?", "Which holiday calendar is applicable for associates working at onsite?", "Which holiday calendar is applicable for associates working in US?" ],
+         "responses": ["Client holiday calendar will be application for associates working at client site."],
+         "context": [""]
+        },
+        {"tag": "no_holiday_client",
+         "patterns": ["What do I do if Abzooba has a holiday but the client does not?", "What can I do if Abzooba has a holiday but the client does not?", "What shall I do if Abzooba has a holiday but the client does not?" ],
+         "responses": ["Associate at client site needs to work on the day when client do not have a holiday. If the associate is an Abzooba employee, he/she can work with their Abzooba manager to get a comp day off."],
+         "context": [""]
+        },
+        {"tag": "holiday_india",
+         "patterns": ["How many holidays are available for associates in India?", "How many holidays are available for associates in offshore?" ],
+         "responses": ["There are total 12 holidays and the holiday calendar can be accessed from <url>"],
+         "context": [""]
+        },
+        {"tag": "floating_holiday",
+         "patterns": ["How many Floating holidays are there?","How many Floating holidays are available can associates take?","How many Floating holidays are available for associates?","How many Floating holidays are available for US associates?","How many Floating holidays are available for India associates?"],
+         "responses": ["Associates are eligible for 2 Floating Holidays designated for respective locations."],
+         "context": [""]
+        },
+        {"tag": "floating_holiday_process",
+         "patterns": ["What is the process to avail Floating Holiday?", "How do we avail Floating Holiday?", "How to avail Floating Holiday?", "How do we apply Floating Holiday?", "How to apply for Floating Holiday?" ],
+         "responses": ["To avail, associates should apply on the HRMS system with prior approval from the Project Manager and Mentor marking RMG."],
+         "context": [""]
+        },
+        {"tag": "leavepolicy_calendar",
+         "patterns": ["What is the leave calendar year followed in Abzooba?","What is the leave calendar followed in Abzooba?"],
+         "responses": ["Leave Calendar: 1 January to 31 December."],
+         "context": [""]
+        },
+        {"tag": "leavepolicy_privilege",
+         "patterns": ["How many Privilege Leave/ PL an associates are eligible during the year?","How many Privilege Leave/ PL an there?", "How many Privilege Leave/ PL i can take during the year?", "How many Privilege Leave/ PL one can take during the year?", "How many Privilege Leave/ PL can associates take during the year?"],
+         "responses": ["15,for new joiners' leaves are allotted on pro rata basis considering date of joining. 7 of such leaves are carried forward to the next year, or on prorate basis considering date of joining."],
+         "context": [""]
+        },
+        {"tag": "leavepolicy_casual",
+        "patterns": ["How many Casual Leave/ CL an associates are eligible during the year?","How many Casual Leave/ CL an there?", "How many Casual Leave/ CL i can take during the year?", "How many Casual Leave/ CL one can take during the year?", "How many Casual Leave/ CL can associates take during the year?"],
+        "responses": ["10,for new joiners' leaves are allotted on pro rata basis considering date of joining. Such leaves are not carried forward to the next year."],
+        "context": [""]
+        },
+        {"tag": "leavepolicy_sick",
+        "patterns": ["How many Sick Leave/ SL an associates are eligible during the year?","How many Sick Leave/ SL an there?", "How many Sick Leave/ SL i can take during the year?", "How many Sick Leave/ SL one can take during the year?", "How many Sick Leave/ SL can associates take during the year?"],
+        "responses": ["3,such leaves are carried forward and maximum accumulation is 56."],
+        "context": [""]
+        },
+        {"tag": "leavepolicy_consultants",
+        "patterns": ["How many leaves are Abzooba consultants eligible for?","How many leaves can Abzooba consultants take?", "What is the number of days Abzooba consultants can take leave?"],
+        "responses": ["Abzooba's consultants on direct contract are eligible for 1 day leave in a month/ 12 days leave in a year on pro rata basis depending on date of joining. Such leaves can't be carried forward to the next year."],
+        "context": [""]
+        },
+        {"tag": "leavepolicy_continuous",
+        "patterns": ["How many maximum number of continuous leaves is a person eligible for?","How many maximum number of continuous leaves can a person take?", "How many maximum number of continuous leaves can i take?"],
+        "responses": ["15 days of continuous leaves which should not include more than 3 continuous days of casual leave."],
+        "context": [""]
+        },
+        {"tag": "leavepolicy_continuous_casual",
+        "patterns": ["How many maximum number of continuous Casual Leave/ CL is a person eligible for?","How many maximum number of continuous Casual Leave/ CL can a person take?", "How many maximum number of continuous Casual Leave/ CL can i take?"],
+        "responses": ["Total 3 days of CL leave in continuation are permissible."],
+        "context": [""]
+        },
+        {"tag": "leavepolicy_carry",
+         "patterns": ["How many Privilege leave balance for the year 2020 can be carried forward to the next year?","How many PL leave balance for the year 2020 can be carried forward to the next year?","How many Privilege leave balance for 2020 can be carried forward to 2021?","Till when can the leave balance be carried forward?"],
+         "responses": ["Please provide hospital type"],
+         "context": ["All PL balance can be carried forward till September 2021."]
+        },
+        {"tag": "leavepolicy_advance",
+        "patterns": ["Is advance leave applicable?","When can we take advance leave?","Who can take advance leave?", "When can associates be eligible for advance leave?","Who is eligible for advance leave?"],
+        "responses": ["Associates are eligible for advance Privilege Leave based on the following conditions: 1. Marriage of the associate applying for leave 2. Serious illness of the associate (supported with Doctor’s prescription / certificate) 3.Death in the immediate family 4.Major natural calamity leading to loss of property."],
+        "context": [""]
+        },
+        {"tag": "attendance_timesheet",
+        "patterns": ["Where do I fill in my Abzooba timesheets?","How do I fill in my Abzooba timesheets?","Whom should I contact to fill my Abzooba timesheet?", "Where do I fill in my client timesheet?","How do I fill in my client timesheet?","Who should i contact to fill in my client timesheet?"],
+        "responses": ["The person needs to be referred to the appropriate RMG coordinator who will generate the needed access to our internal timesheets: Sandeep Shelke: BD&C and Monal Tandon: AA"],
+        "context": [""]
+        },
+        {"tag": "attendance_workinghours",
+        "patterns": ["What is Abzooba's standard working hours?","What is standard working hours of Abzooba?","What is Abzooba's working hours?"],
+        "responses": ["It is 9.30 A.M. to 6.00 P.M. From Monday to Friday.It may change on basis of business / project need. "],
+        "context": [""]
+        },
+        {"tag": "attendance_wrongtimesheet",
+        "patterns": ["I input the wrong hours and submitted my timesheet.How do I correct it?","How do I correct the timesheet as i input wrong working hours?", "How to correct the timesheet with wrong working hours?"],
+        "responses": ["Please email the following teams to correct this error: Human_resources@abzooba.com and Joanita.Sontakke@abzooba.com"],
+        "context": [""]
+        },
+        {"tag": "referral_contractor",
+        "patterns": ["I am a contractor and referred someone who was hired.Am I eligible for a referral bonus?","I made a referral of somwone being a contractor who was hired.Am I eligible for a referral bonus?"],
+        "responses": ["No"],
+        "context": [""]
+        },
+        {"tag": "referral_bonus",
+        "patterns": ["How long after my referral joins the company will I get the bonus?","When will i get the bonus after my referral joins the company?", "after how many days my referral joins the company will I get the bonus?"],
+        "responses": ["On a referral being hired, the referrer is credited with a referral bonus of INR Twenty Thousand (INR 20000/-) in two (2) equal instalments. The first instalment is credited along with the payroll of the month when the referee joins and the second instalment is credited along with the payroll of the month when the referee is confirmed employment with Abzooba.If the referred candidate joins within 20th of a payroll cycle (20th included), the referral bonus will get credited in the account of the referrer in the same cycle. In the event when the referred candidate joins after 20th of the payroll cycle, the referral bonus will get credited in the account of the referrer in the following cycle."],
+        "context": [""]
+        },
+        {"tag": "referral_process",
+        "patterns": ["How associate should send referral to recruitment team?","How should I send referral to recruitment team?", "What is the process or procedure for sending  referral to recruitment team?"],
+        "responses": ["All referral requests should be made through the incident management platform -JIRA by raising tickets, as a response to the job postings available on Abzooba website, or mailers sent by the Recruitment team. While making requests for referral, it is necessary to attach the resume of the candidate being referred."],
+        "context": [""]
+        },
+        {"tag": "referral_eligible",
+        "patterns": ["Who is eligible for referral bonus?","Am I eligible for referral bonus?"],
+        "responses": ["1.Temporary contractual associates and former associates are not eligible for the referral program. 2.Spouses or Children of existing associates are exempted from the referral program. 3.Fresher profiles and profile of Interns are welcome, but they are exempted from the referral program. 4.When a referred intern working with the organization is hired in direct payrolls of the organization, the referrer will be eligible to receive referral bonus. 5.Referrer on referring a candidate cannot be part of the interview panel for hiring the candidate. 6.The Reporting Managers, Project Managers, COE and Delivery Heads will not be a part of the referral policy when their referees join their team. 7.This policy is also not applicable in cases where the reporting of a candidate is pre-decided and the reporting manager/project manager refers the candidate being aware of the situation, or in a scenario where the referee on joining the organization, is made to report the associate or project manager, who had referred him/her."],
+        "context": [""]
+        },
+        {"tag": "exit_leavepolicy",
+        "patterns": ["Whether resigned associate is eligible to avail leaves during the notice period?","Are resigned associates eligible to avail leaves during the notice period?","Is resigned associate eligible to avail leaves during the notice period?"],
+        "responses": ["Leave is not encouraged on notice period and Abzooba reserves the right to deduct salary or extend notice for absence from office in lieu of the leaves taken during the notice period."],
+        "context": [""]
+        },
+        {"tag": "exit_LWD",
+        "patterns": ["When Resigned associate will get formal notification on his / her LWD?"],
+        "responses": ["In case the resignation decision stands confirmed, Leadership conveys the relieving date or Last Working Day to RMG and HR at the earliest. On the receipt of formal approval from Leadership HR Ops communicate LWD to resigned associate. (preferably within 30 days from the date of resignation)"],
+        "context": [""]
+        },
+        {"tag": "exit_PHOKT",
+        "patterns": ["By when resigned associate should complete project hand over / knowledge transfer?"],
+        "responses": ["Ideally, associate is expected to complete his / her project hand over / knowledge transfer at least one day prior to actual LWD."],
+        "context": [""]
+        },
+        {"tag": "exit_clearance",
+        "patterns": ["What is Abzooba's Clearance Checklist?","Tell me something about Abzooba's Clearance Checklist?","What should i keep in mind about Abzooba's Clearance Checklist?"],
+        "responses": ["Associate needs to get clearance from following departments (Considering the pandemic situation HR Ops will get the following clearance from the respective stakeholder) Mentor,Project Manager,IT,Admin,RMG,Finance,Compliance,Social Media Undertaking ( Mandatory)"],
+        "context": [""]
+        },
+        {"tag": "exit_alumni",
+        "patterns": ["How to/do I get added to Abzooba Alumni network?","What is the process to get added to Abzooba Alumni network?"],
+        "responses": ["Please notify HR Ops representative during exit interview or write to us at alumni@abzooba.com so that we can add you to our Alumni Network."],
+        "context": [""]
+        },
+        {"tag": "exit_res_acceptance",
+        "patterns": ["When resigned associate will get resignation acceptance letter?","By When resigned associate will get resignation acceptance letter?"],
+        "responses": ["On the receipt of Clearance Checklist and confirmation from respective stakeholders, resignation acceptance letter will be issued by the HR Ops Representative on LWD."],
+        "context": [""]
+        },
+        {"tag": "exit_expletter",
+        "patterns": ["When resigned associate will get relieving letter and experience letter?","By When resigned associate will get relieving letter and experience letter? "],
+        "responses": ["On successful handover of Abzooba / client assets relieving letter and experience letter will be issued to resigned associate."],
+        "context": [""]
+        },
+        {"tag": "exit_settlement",
+        "patterns": ["When resigned associate's Full and Final Settlement will be done?","By When should an associate expect Full and Final Settlement will be done?"],
+        "responses": ["Your final pay dues will be held back by Abzooba until you submit all the assets. On successful completion of asset handover, your Full and Final Settlement will be disbursed along with the upcoming pay cycle (On the first day of the month)"],
+        "context": [""]
+        },
+        {"tag": "exit_leave_encash",
+        "patterns": ["What is procedure of leave encashment in case of Exit?","What is process of leave encashment in case of Exit?", "How do i encash my leaves in case of Exit?"],
+        "responses": ["Only Privileged Leave balance will be encashed based on current basic salary. This is not applicable to those who are resigning on probation."],
+        "context": [""]
+        },
+        {"tag": "exit_insurance",
+        "patterns": ["What is generic guidelines in case parental / in laws insurance post Exit?","What are guidelines for parental / in laws insurance post Exit?"],
+        "responses": ["Abzooba's group health insurance coverage will be applicable until LWD. The prorated premium will be refunded, those who have added parents/in-laws & does not have any claim for the current year for any of the family members."],
+        "context": [""]
+        },
+        {"tag": "exit_withdraw_pf",
+        "patterns": ["What is procedure of withdrawal of Provident Fund?","What is process of withdrawal of PF?","How do I withdraw my PF?"],
+        "responses": ["Employees Provident Fund - You can find the UAN no in Payslip. The provident fund amount can be withdrawn after 2 months from date of release if you are not continuing the account further. The date of exit will be updated from Abzooba within this period of time."],
+        "context": [""]
+        },
+        {"tag": "exit_gratuity",
+        "patterns": ["Who is applicable for Gratuity payment from Abzooba?"],
+        "responses": ["Gratuity - This is only applicable to those who have worked 5 years or more in the organisation (without any break-in service)."],
+        "context": [""]
+        },
+        {"tag": "exit_queries",
+        "patterns": ["To whom associate should connect for post exit queries?","Whom should I connect for post exit queries?"],
+        "responses": ["Please write to Finance Team at finance@abzooba.com For any query related to full and final settlement, Form-16, Payslip, Sodexo.For query related to Leave, Medical Insurance, statutory compliance like EPF, Gratuity etc. and any other concern, please connect with Employee Success Team at human_resources@abzooba.com "],
+        "context": [""]
+        }
+   ]
+}
